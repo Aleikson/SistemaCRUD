@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <span>6 Ano B</span>
+            <button onclick="openModal()" id="new">Incluir</button>
+        </div>
+
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>1 - Nota</th>
+                        <th>2 - Nota</th>
+                        <th>3 - Nota</th>
+                        <th>4 - Nota</th>
+                        <th>Média</th>
+                        <th>Resultado</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="save-container">
+            <div class="modal">
+                <form>
+                    <label for="aluno">Nome</label>
+                    <input id="aluno" type="text" required />
+
+                    <label for="nota1">Nota 1</label>
+                    <input id="nota1" type="number" required />
+
+                    <label for="nota2">Nota 2</label>
+                    <input id="nota2" type="number" required />
+
+                    <label for="nota3">Nota 3</label>
+                    <input id="nota3" type="number" required />
+
+                    <label for="nota4">Nota 4</label>
+                    <input id="nota4" type="number" required />
+
+                    <button id="btnSave">Salvar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

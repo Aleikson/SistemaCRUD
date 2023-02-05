@@ -1,0 +1,132 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: #edf7fa;
+}
+
+.container {
+  width: 90%;
+  height: 80%;
+  border-radius: 10px;
+  background: rgba(10, 23, 55, 0.15);
+}
+
+.header {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  color: #000;
+  font-size: 35px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.save-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.modal label {
+  width: 100%;
+  color: #000;
+  font-size: 20px;
+}
+
+#nome {
+  padding: 0px 100px 0px 100px;
+}
+
+.modal input {
+  display: block;
+  width: 100%;
+  outline: none;
+  margin-bottom: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.modal button {
+  width: 100%;
+  margin: 10px auto;
+  outline: none;
+  padding: 5px 10px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(10, 23, 55, 0.8);
+  color: rgb(255, 255, 255);
+}
+
+table {
+  width: 100%;
+  word-break: break-all;
+  border-collapse: collapse;
+}
+
+tbody tr td.acao {
+  text-align: center;
+}
+
+tbody tr td {
+  text-align: center;
+  vertical-align: text-top;
+  padding: 6px;
+  max-width: 50px;
+}
+
+.active {
+  display: flex;
+}
+
+tr {
+  border-bottom: 1px solid #000;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    flex-wrap: wrap;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .modal {
+    width: 90%;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
